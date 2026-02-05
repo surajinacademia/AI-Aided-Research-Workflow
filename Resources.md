@@ -21,11 +21,17 @@ Understanding the environmental impacts of AI and recommendations
 
 1. **Why AI assisted workflow could also be sustainable:**
     a. [The carbon emissions of writing and illustrating are lower for AI than for humans](https://www.nature.com/articles/s41598-024-54271-x)
+
     b. [Reconciling the contrasting narratives on the environmental impact of large language models](https://www.nature.com/articles/s41598-024-76682-6#ref-CR10)
+
 2. **News articles:**
+
     a. [AI Large Language Models: new report shows small changes can reduce energy use by 90%](https://www.unesco.org/en/articles/ai-large-language-models-new-report-shows-small-changes-can-reduce-energy-use-90)
+
     b. [In a first, Google has released data on how much energy an AI prompt uses](https://www.technologyreview.com/2025/08/21/1122288/google-gemini-ai-energy/)
+
     c. Data Collection – Big Tech Emissions + Energy
+
 3. **Energy Comparison Leaderboard**: [https://ml.energy/leaderboard/?__theme=light](https://ml.energy/leaderboard/?__theme=light)
 
 ---
