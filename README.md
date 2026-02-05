@@ -1,4 +1,4 @@
-# The Existential Dread and AI Agents: A Scientific Researcher's Manifesto for Sustainable, Context-Aware AI Integration
+# The Existential Dread and AI Agents: A Scientific Researcher's Manifesto for Context-Aware AI Integration
 
 [![Version 1.0](https://img.shields.io/badge/version-1.0-blue.svg)](https://github.com/surajinacademia/AI-Aided-Research-Workflow)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
