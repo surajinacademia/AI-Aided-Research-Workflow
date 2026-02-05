@@ -1,10 +1,13 @@
-# AI Research Workflow for Physics Nerds
+# The Existential Dread and AI Agents: A Scientific Researcher's Manifesto for Sustainable, Context-Aware AI Integration.
 
 ## Abstract
 
-Despite the excitement surrounding AI integration in academic research, a widespread misunderstanding of the capabilities and limitations of Large Language Models (LLMs) often leads to poor performance, hallucinations, buggy code, and data privacy concerns. While AI chatbots have become remarkably powerful(potentially dangerous) aligning user expectations with model responses is often frustrating and suboptimal. In this talk I will show examples of context engineering and effective prompting techniques. We will discuss agentic capabilities that leverage tools for image analysis and explore how custom instructions and rules can guide AI toward better results while maintaining your data private. Additionally, I will demonstrate how to custom-design agents for data analysis and literature organization to extract key information from dense academic papers. Finally, I will showcase tools—including Cursor, MCP (Model Context Protocol), Antigravity, and Claude’s scientific skills—that facilitate a more efficient research workflow. As LLMs consume significant energy,  understanding their strengths and limitations is essential for sustainable integration.
+Despite the excitement surrounding AI integration in academic research, a lack of understanding of the capabilities and limitations of Large Language Models (LLMs) often leads to hallucinations, buggy or overengineered code, and data privacy concerns. While AI chatbots have become remarkably powerful (and potentially dangerous), aligning user expectations with model responses can be very frustrating. In this talk/tutorial, I will show examples of context engineering and effective prompting techniques that can help you navigate large codebases and projects. We will discuss agentic capabilities that leverage tools like MCPs, skills, commands, rules, and planning modes. We will explore how custom instructions can guide AI towards giving significantly better results while maintaining your data local and private. Additionally, I will demonstrate how to create custom agents and MCPs for research-specific tasks like data analysis, image analysis, and literature organization. As LLMs consume significant energy in training and inference, understanding their strengths and limitations is essential for sustainable integration.
 
-**Keywords: Agents, image analysis, data analysis, context engineering, Custom workflows **
+**Keywords: Agents, Skills, MCPs, Commands, Rules, Image Analysis, Data Analysis, Context Engineering, Custom Workflows**
+
+GitHub Repository: https://github.com/surajinacademia/AI-Aided-Research-Workflow
+ 
 
 A framework for AI-aided research using **context engineering** to guide AI agents for coding, data analysis, image analysis, and scientific computing. This repository demonstrates how to move beyond simple prompting to sophisticated agent-based workflows using rules, skills, MCPs, and subagents. The key philosophy is to provide the right structure, rules, and tools so AI agents work autonomously and reliably on complex research tasks.
 
