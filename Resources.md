@@ -324,7 +324,7 @@ def k_off_catch_slip(force, Nb, F_s, F_c, phi_s, phi_c):
     plt.show()
     ```
     
-    ![image.png](images/extracted.png)
+    ![image.png](images/extracted.png)'''
 
 - **Data Privacy**
     
