@@ -1,7 +1,7 @@
 <!--
 🤖 AI-RULEZ :: GENERATED FILE — DO NOT EDIT DIRECTLY
 Project: AI-Aided-Research-Workflow
-Generated: 2026-02-05 12:07:48
+Generated: 2026-02-05 12:14:59
 Source: .ai-rulez/config.yaml
 Target: .github/copilot-instructions.md
 Content: rules=4, sections=0, agents=0
@@ -417,7 +417,7 @@ This project follows a modular architecture with clear separation of concerns.
 - Interface-based design for flexibility
 - Clear separation between business logic and infrastructure
 
-### git-workflow
+### git
 
 **Repository:** https://github.com/surajinacademia/AI-Aided-Research-Workflow
 

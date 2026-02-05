@@ -7,52 +7,23 @@ Despite the excitement surrounding AI integration in academic research, a lack o
 **Keywords: Agents, Skills, MCPs, Commands, Rules, Image Analysis, Data Analysis, Context Engineering, Custom Workflows**
 
 GitHub Repository: https://github.com/surajinacademia/AI-Aided-Research-Workflow
- 
 
-A framework for AI-aided research using **context engineering** to guide AI agents for coding, data analysis, image analysis, and scientific computing. This repository demonstrates how to move beyond simple prompting to sophisticated agent-based workflows using rules, skills, MCPs, and subagents. The key philosophy is to provide the right structure, rules, and tools so AI agents work autonomously and reliably on complex research tasks.
+## Content
+
+This is a framework for AI-aided research using **context engineering** to guide AI agents for coding, data analysis, image analysis, and scientific computing. This repository demonstrates how to move beyond simple prompting to sophisticated agent-based workflows using rules, skills, MCPs, and subagents. The key philosophy is to provide the right structure, rules, and tools so AI agents work autonomously and reliably on complex research tasks.
 
 In this repository you will find information about:
 
-- **Rules**: Instructions that guide AI behavior in generating code, editing files, and creating files. Located in `.cursor/rules/`. Rules are written in markdown in multiple files, each focusing on specific tasks. For example, `project-repo.mdc` guides the AI on how to organize the project repository. `python-coding-standards.mdc` specifies coding standards and best practices. The main rule, `rules.mdc`, specifies the project goals and lists all available rules, skills, subagents, MCPs, and commands.
-
-- **Tool Integration**: Connecting AI to MCPs (Model Context Protocol) to leverage specialized tools for complex tasks, such as `napari-mcp` (image visualization), `cellpose` (cell segmentation), `sympy-mcp` (symbolic math), and `fmcp` (scientific plotting). See [mcpservers.org](https://mcpservers.org).
-
-- **Subagents**: Specialized agents that run in the background and interact with the main agent. They do not share the main agent's context window, preserving memory. For example, the `literature-review` subagent searches literature and provides citations.
-
-- **Skills**: Reusable capabilities providing domain-specific tools and knowledge. For example, scientific writing skills for LaTeX or cluster execution.
-
-- **Commands**: Shortcuts for repetitive tasks that don't require deep reasoning. For example, the `/git` command helps with version control.
-
-## Repository Structure
-
-```
-AI Research Workflow/
-├── .cursor/
-│   ├── rules/                  # Persistent AI guidance
-│   │   ├── rules.mdc           # Main project rules & expert domains
-│   │   ├── python-coding-standards.mdc
-│   │   ├── Image-analysis.mdc  # Image analysis patterns
-│   │   └── project-repo.mdc    # Project structure guide
-│   ├── agents/                 # Specialized agents
-│   │   └── literature-review.md
-│   ├── commands/               # Command shortcuts
-│   │   └── git.md
-│   └── skills/                 # Reusable capabilities
-│       └── scientific-writing/
-├── Data_analysis/
-│   ├── road_accident_dataset.csv
-│   └── prompt.md
-├── Image_analysis/
-│   └── demo_images/            # 23 sample images
-├── deep_stuff/
-│   └── rules_of_life.md
-└── workflow.ipynb              # Workflow notebook
-```
+    1. Rules
+    2. MCPs: Here is an example of MCP that I created on one fine evening: [napari-mcp](https://github.com/surajinacademia/cellpose_mcp)
+    3. Skills
+    4. Subagents
+    5. Commands
 
 ## Example Workflows
 
 ### Data Analysis
-- Rules define pandas operations and visualization standards
+- Rules define pandas operations and visualization standards for data analysis.
 - Provide dataset and high-level analysis goals
 - AI creates analysis plan with specific questions
 - Generate exploratory analysis, statistics, and visualizations
@@ -60,68 +31,56 @@ AI Research Workflow/
 **Example:** `Data_analysis/road_accident_dataset.csv` - accident patterns by country, region, time, severity
 
 ### Image Analysis
-- Configure `napari-mcp` and `cellpose` servers
-- `Image-analysis.mdc` rule activates for `.png` files
-- AI uses MCPs for segmentation instead of custom code
-- Interactive visualization and quantification
+- Configure `napari-mcp` and `cellpose-mcp` servers
+- Interactive visualization in napari window and segmentation with cellpose-mcp.
 
-**Example:** `Image_analysis/demo_images/` - 23 microscopy images for cell segmentation
-
-### Scientific Computing
-- Use `sympy-mcp` for symbolic math, `fmcp` for plotting
-- Domain rules provide physics/math context
-- Solve equations symbolically, generate publication-quality plots
-- Auto-generate LaTeX equations
-
+**Example:** n
+- use prompt: "Can you segment the cells in the image and find the number of cells and the nuclei positions?"
+ 
 ## Reference
 
 ### Rules
 
 | Rule | Description | When Applied |
 |------|-------------|--------------|
-| `rules.mdc` | Main rule, domain expertise, data analysis | Always |
-| `python-coding-standards.mdc` | Python patterns, Jupyter workflows, plotting | Always |
-| `Image-analysis.mdc` | Image analysis, MCP tool prioritization | For `.png` files |
-| `project-repo.mdc` | Project structure, file organization | Always |
+| `rules.md` | Main rule file with project-wide standards and expert domains | Always |
+| `python-coding-standards.md` | Python coding patterns, best practices, and visualization standards | Always |
+| `Image-analysis.md` | Image analysis workflow patterns and MCP tool prioritization | For `.png` files |
+| `project-repo.md` | Repository structure documentation and navigation guide for AI agents | Always |
 
 ### MCP Servers
 
 | MCP | Capabilities | Use Cases |
 |-----|-------------|-----------|
-| `napari-mcp` | Interactive image visualization | Microscopy, 3D imaging, segmentation |
-| `cellpose` | Cell segmentation | Cell counting, morphology analysis |
-| `fmcp` | Math plotting, numpy, sympy | Scientific plots, numerical computation |
-| `sympy-mcp` | Symbolic mathematics | Calculus, algebra, differential equations |
-| `claude-scientific-skills` | Scientific computing | Research computations |
-| `data-forge` | Data manipulation | Complex data transformations |
-| `Notion` | Notion integration | Note-taking, documentation |
-| `cursor-ide-browser` | Browser automation | Web testing, scraping |
+| `napari-mcp` | Interactive image visualization and analysis | Microscopy, 3D imaging, segmentation |
+| `cellpose-mcp` | Cell segmentation and quantification | Cell counting, morphology analysis |
+| `fmcp` | Mathematical plotting (matplotlib, numpy, sympy) | Scientific plots, numerical computation |
+| `sympy-mcp` | Symbolic mathematics and calculus | Calculus, algebra, differential equations |
+| `claude-scientific-skills` | Scientific computing capabilities | Research computations |
+| `data-forge` | Data manipulation and analysis | Complex data transformations |
+| `notion-mcp` | Notion workspace integration | Note-taking, documentation |
+| `zotero-mcp` | Zotero library access for literature management | Literature management |
+| `cursor-ide-browser` | Browser automation for testing | Web testing, scraping |
 
 ### Skills
 
 | Skill | Purpose |
 |-------|---------|
-| `create-rule` | Create new Cursor rules for persistent guidance |
-| `create-skill` | Author new agent skills |
-| `update-cursor-settings` | Modify Cursor/VS Code settings |
+| `scientific-writing` | Creates concise, structured scientific documents with LaTeX equations, integrated figures, and clear technical writing |
 
-## Customization
+### Subagents
 
-### Adapt to Your Research
+| Subagent | Purpose |
+|----------|---------|
+| `literature-review` | Expert literature research for biophysics and cell mechanics, semantic searches across local papers, Zotero library, and web sources |
 
-1. **Replace Data**: Swap `Data_analysis/` and `Image_analysis/` with your datasets
-2. **Customize Rules**: Edit `.cursor/rules/` for your domain and coding style
-3. **Add MCPs**: Configure additional servers (see [mcpservers.org](https://mcpservers.org))
-4. **Create Skills**: Build custom skills for repetitive tasks using `create-skill`
-5. **Document Workflows**: Update README with your specific patterns
+### Commands
 
-### Quick Tips
-
-- **Layer context**: General standards → Domain expertise → Project patterns
-- **Use conditional rules**: Apply rules based on file type
-- **Combine tools**: Rules + MCPs + Skills work together
-- **Iterate**: Start minimal, add patterns as you discover them
-
+| Command | Purpose |
+|----------|---------|
+| `git` | Complete GitHub workflow: quick commit & push for small updates, detailed workflow for significant changes with proposed commit messages |
+| `airulez` | AI-Rulez workflow: generate and commit with default message. |
+ 
 ## Resources
 
 - **Cursor Documentation**: [cursor.sh/docs](https://cursor.sh/docs)
@@ -131,12 +90,11 @@ AI Research Workflow/
 
 ## License
 
-Copyright © 2024 Suraj Sahu. All rights reserved.
+Copyright © 2026 Suraj Kumar Sahu. All rights reserved.
 
 This is a private research repository. All code, data, and documentation are proprietary and must not be shared, published, or made available outside the authorized research group without explicit written permission.
 
 ## Contact
 
-**Author:** Suraj Kumar Sahu (ssahu2@ucmerced.edu)
-
-**Institution:** University of California, Merced
+**Author:** Suraj Kumar Sahu @[surajinacademia](https://github.com/surajinacademia) (ssahu2@ucmerced.edu)
+**Affiliation:** University of California, Merced

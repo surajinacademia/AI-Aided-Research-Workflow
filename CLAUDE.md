@@ -1,7 +1,7 @@
 <!--
 🤖 AI-RULEZ :: GENERATED FILE — DO NOT EDIT DIRECTLY
 Project: AI-Aided-Research-Workflow
-Generated: 2026-02-05 12:07:48
+Generated: 2026-02-05 12:14:59
 Source: .ai-rulez/config.yaml
 Target: CLAUDE.md
 Content: rules=4, sections=0, agents=1
@@ -404,7 +404,7 @@ The agent is an expert in:
 
 @.ai-rulez/context/architecture.md
 
-### git-workflow
+### git
 
-@.ai-rulez/context/git-workflow.md
+@.ai-rulez/context/git.md
 
