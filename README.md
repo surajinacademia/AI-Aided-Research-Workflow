@@ -1,7 +1,7 @@
 # The Existential Dread and AI Agents: A Scientific Researcher's Manifesto for Sustainable, Context-Aware AI Integration
 
 [![Version 1.0](https://img.shields.io/badge/version-1.0-blue.svg)](https://github.com/surajinacademia/AI-Aided-Research-Workflow)
-[![License](https://img.shields.io/badge/License-Proprietary-red.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/python-3.10+-green.svg)](https://www.python.org/)
 
 ## 📖 Abstract
@@ -18,11 +18,11 @@ This is a framework for AI-aided research using **context engineering** to guide
 
 ### 📌 In this repository:
 
-1. [**Rules**](#-rules) - Project-wide standards and expert domains
-2. [**MCPs**](#-mcp-servers) - Model Context Protocol servers for specialized tasks
-3. [**Skills**](#-skills) - Reusable AI capabilities
-4. [**Subagents**](#-subagents) - Specialized AI agents for specific tasks
-5. [**Commands**](#-commands) - Command shortcuts for common workflows
+1. [**Rules**](#-rules) - Non-negotiable rules for the research workflow.
+2. [**MCPs**](#-mcp-servers) - Model Context Protocol servers for specialized tasks. You can create your own MCPs. Like this [cellpose_mcp](https://github.com/surajinacademia/cellpose_mcp) for cell segmentation that I created one fine evening.
+3. [**Skills**](#-skills) - Skills give workflow specific capabilities tuned to your research domain. 
+4. [**Subagents**](#-subagents) - Specialized AI agents that other agents can call to perform specific tasks like literature review or running codes on a cluster.
+5. [**Commands**](#-commands) - Command shortcuts for common workflows. Like `git` for version control. 
 
 ---
 
@@ -101,9 +101,9 @@ This is a framework for AI-aided research using **context engineering** to guide
 
 ## 📄 License
 
-**Copyright © 2026 Suraj Kumar Sahu. All rights reserved.**
+This project is licensed under the **MIT License**—free for use, modification, and distribution with attribution. See [LICENSE](LICENSE) for the full text.
 
-This is a private research repository. All code, data, and documentation are proprietary and must not be shared, published, or made available outside the authorized research group without explicit written permission.
+This is a workshop and tutorial repository. You are welcome to use it for learning, teaching, and building your own AI-aided research workflows.
 
 ## 📞 Contact
 
