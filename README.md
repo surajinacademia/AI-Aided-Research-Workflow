@@ -14,7 +14,7 @@
 
 ## 🚀 Introduction
 
-This is a framework for AI-aided research using **context engineering** to guide AI agents for coding, data analysis, image analysis, and scientific computing. This repository demonstrates how to move beyond simple prompting to sophisticated agent-based workflows using rules, skills, MCPs, and subagents. The key philosophy is to provide the right structure, rules, and tools so AI agents work autonomously and reliably on complex research tasks. You can use any IDE like Cursor, VS Code, Antigravity, etc. for this framework. Airulez [https://goldziher.github.io/ai-rulez/](https://goldziher.github.io/ai-rulez/) will automatically sync all the tools across the IDEs. One ring to rule them all.
+This is a framework for AI-aided research using **context engineering** to guide AI agents for coding, data analysis, image analysis, and scientific computing. This repository demonstrates how to move beyond simple prompting to sophisticated agent-based workflows using rules, skills, MCPs, and subagents. The key philosophy is to provide the right structure, rules, and tools so AI agents work autonomously and reliably on complex research tasks. You can use any IDE like Cursor, VS Code, Antigravity, etc. for this framework. Airulez [https://goldziher.github.io/ai-rulez/](https://goldziher.github.io/ai-rulez/) will automatically sync all the tools across the IDEs. One ring to rule them all. 
 
 ### 📌 In this repository:
 
@@ -23,6 +23,7 @@ This is a framework for AI-aided research using **context engineering** to guide
 3. [**Skills**](#-skills) - Skills give workflow specific capabilities tuned to your research domain. 
 4. [**Subagents**](#-subagents) - Specialized AI agents that other agents can call to perform specific tasks like literature review or running codes on a cluster.
 5. [**Commands**](#-commands) - Command shortcuts for common workflows. Like `git` for version control. 
+6. [**Resources**](Resources.md) - Ton of links and resources, some free unsolicited advice and unsubstantiated opinions.
 
 ---
 

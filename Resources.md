@@ -77,15 +77,35 @@ Understanding the environmental impacts of AI and recommendations
 
 ## AI Safety
 
-1. [The best resource on privacy from Stanford university](https://uit.stanford.edu/security/responsibleai) and [this guidance page from MIT](https://ist.mit.edu/ai-guidance)
+### University Guidelines
+- [Stanford University - Responsible AI Use](https://uit.stanford.edu/security/responsibleai)
+- [MIT AI Guidance](https://ist.mit.edu/ai-guidance)
 
-1. [Evaluating trust and safety of large language models from Lawrence Livermore](https://www.llnl.gov/article/51616/evaluating-trust-safety-large-language-models)
+### Stanford AI Best Practices
+
+| Area | Best Practices |
+|------|----------------|
+| **Data Privacy & Usage** | Avoid inputting data about others that you wouldn't want them to input about you |
+| **Data Privacy & Usage** | Avoid inputting sensitive data (Moderate/High Risk) on third-party AI platforms not covered by institutional agreements |
+| **Data Privacy & Usage** | If inputting Low Risk Data, consider whether you want it to be public |
+| **Data Privacy & Usage** | Opt out of sharing data for AI iterative learning wherever possible |
+| **Data Privacy & Usage** | If AI is used to interact with users, obtain informed consent about how data is used and provide opt-out options |
+| **Emerging Technology** | Avoid potentially risky third-party bots and integrations (they may scrape calendars, transcribe/record meetings unknowingly) |
+| **Recommended Best Practices** | For content creation: If use of generative AI is permitted at all, always transparently cite its use |
+| **Recommended Best Practices** | Always refer to specific policies of discipline-relevant journals, publishers, and professional groups |
+| **Promoting Discourse** | Discuss opportunities for AI to contribute positively to your goals |
+| **Promoting Discourse** | Have conversations around ethical issues and limitations related to AI use and development |
+
+### Trust & Safety Resources
+1. [Evaluating Trust and Safety of LLMs (Lawrence Livermore)](https://www.llnl.gov/article/51616/evaluating-trust-safety-large-language-models)
 2. [Center for AI Standards and Innovation (CAISI)](https://www.nist.gov/caisi)
-3. [How maintain privacy of your data you submit to LLM](https://medium.com/@sanjay.mohindroo66/data-privacy-and-compliance-for-large-language-models-llms-37d8179ac12b)
-4. [Not allowing AI to train on your data](https://cursor.com/security)
-5. [NIST AI risk management framework for Organizations](https://www.nist.gov/itl/ai-risk-management-framework)
-6. Why lack of AI literacy leads to more user adoption and safety concerns: As the line between originality and plagiarism is more blurry that becomes a safety issue as traditional academic testing methods is like drawing a line in sand thus makes students more prone to being flagged as violating academic standards and the vice versa where it becomes hard to check if they copied from somewhere, excerbated by the fact that even AI detection software solutions are still inadequate. [https://www.wsj.com/tech/ai/ai-adoption-study-7219d0a1](https://www.wsj.com/tech/ai/ai-adoption-study-7219d0a1)
-7. How do I stop Gemini from using my data?: **Simple!**. Just turn off Gemini Apps Activity and delete past activity and hope it really works!!.
+3. [Data Privacy and Compliance for LLMs](https://medium.com/@sanjay.mohindroo66/data-privacy-and-compliance-for-large-language-models-llms-37d8179ac12b)
+4. [Cursor Security - Preventing AI Training on Your Data](https://cursor.com/security)
+5. [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework)
+6. [AI Adoption Study and Literacy Concerns (WSJ)](https://www.wsj.com/tech/ai/ai-adoption-study-7219d0a1)
+
+### Privacy Tips
+- **Gemini:** Turn off Gemini Apps Activity and delete past activity to protect your data
 
 ---
 
@@ -94,20 +114,20 @@ Understanding the environmental impacts of AI and recommendations
 1. What makes AI an AI: [Why Machines Learn: The Elegant Math Behind Modern AI By Anil Ananthaswamy](https://www.thriftbooks.com/a/anil-ananthaswamy/395314/)
 2. Notes from the AI workshop: [What the heck is a LLM and what is a token](https://www.notion.so/Chapter-1-What-the-heck-is-ChatGPT-1818abaef3618185ab48e8053c2406ea?pvs=21)
 3. Some best practices to prompting: [Choosing the right LLM for your task](https://www.notion.so/Chapter-3-AI-tools-1818abaef3618105a9dbf7e239ea4815?pvs=21)
-4. 7 terms related to AI: [https://youtu.be/VSFuqMh4hus?si=WK7KeWynwHT97I6t](https://youtu.be/VSFuqMh4hus?si=WK7KeWynwHT97I6t)
+4. [7 Key AI Terms Explained (YouTube)](https://youtu.be/VSFuqMh4hus?si=WK7KeWynwHT97I6t)
 
 ---
 
 ## Best Practices in making scientific plots
 
-1. [https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833)
-2. [https://en.wikipedia.org/wiki/Misleading_graph](https://en.wikipedia.org/wiki/Misleading_graph)
-3. [https://brushingupscience.com/2020/05/05/embracing-minimalism-when-presenting-science/](https://brushingupscience.com/2020/05/05/embracing-minimalism-when-presenting-science/)
-4. [https://github.com/pawjast/code_and_pepper/tree/main](https://github.com/pawjast/code_and_pepper/tree/main)
-5. Scientifically accurate and colorblind friendly color palette: [https://github.com/callumrollo/cmcrameri](https://github.com/callumrollo/cmcrameri)
-6. How to know if your plots of color blind friendly: [https://colororacle.org/](https://colororacle.org/)
-7. [https://github.com/cxli233/FriendsDontLetFriends](https://github.com/cxli233/FriendsDontLetFriends)
-8. [https://github.com/matplotlib/cheatsheets?tab=readme-ov-file](https://github.com/matplotlib/cheatsheets?tab=readme-ov-file)
+1. [Ten Simple Rules for Better Figures (PLOS Computational Biology)](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833)
+2. [Misleading Graphs (Wikipedia)](https://en.wikipedia.org/wiki/Misleading_graph)
+3. [Embracing Minimalism When Presenting Science](https://brushingupscience.com/2020/05/05/embracing-minimalism-when-presenting-science/)
+4. [Code and Pepper - Data Visualization Examples](https://github.com/pawjast/code_and_pepper/tree/main)
+5. [cmcrameri - Colorblind-Friendly Scientific Color Palettes](https://github.com/callumrollo/cmcrameri)
+6. [Color Oracle - Colorblind Simulation Tool](https://colororacle.org/)
+7. [Friends Don't Let Friends Make Bad Graphs](https://github.com/cxli233/FriendsDontLetFriends)
+8. [Matplotlib Cheatsheets](https://github.com/matplotlib/cheatsheets?tab=readme-ov-file)
 
 ---
 
@@ -148,59 +168,44 @@ Understanding the environmental impacts of AI and recommendations
     
     > 💡 Claude has higher context window thus perform little better at reading, analyzing and extracting information from papers.
 
-    **Example**
-    
-    This is a figure from [Manibog et. al. 2024](https://www.nature.com/articles/ncomms4941). I want to extract the data and do a data fit
-    
-    ![image.png](AI%20Tools/image.png)
-    
-    **Step by step Prompting**
-    
-    **Prompt:** Extract bond lifetime data from figure 5 from the paper in Python.
-    
-    **Response:**
-    
-    ```python
-    # Bond lifetime data
-    original_data = {
-       '1000': {
-            'force': [0.015, 0.021, 0.025, 0.03, 0.035], 
-            'lifetime': [0.028, 0.025, 0.055, 0.032, 0.015], 
-            'force_sd': [0.001, 0.001, 0.001, 0.001, 0.001], 
-            'lifetime_sd': [0.004, 0.005, 0.006, 0.007, 0.003]
-        }, 
-        '1500': {
-            'force': [0.011, 0.017, 0.023, 0.029, 0.035, 0.04], 
-            'lifetime': [0.012, 0.011, 0.014, 0.029, 0.044, 0.02], 
-            'force_sd': [0.001, 0.001, 0.001, 0.001, 0.001, 0.002], 
-            'lifetime_sd': [0.005, 0.002, 0.003, 0.005, 0.007, 0.008]
-        },
-        '2500': {
-            'force': [0.013158, 0.028421, 0.034737, 0.041930],
-            'lifetime': [0.023, 0.086, 0.079, 0.030]
-        },
-        '300': {
-            'force': [0.019, 0.026, 0.03, 0.035, 0.041, 0.058],
-            'lifetime': [0.075, 0.01, 0.031, 0.021, 0.022, 0.009],
-            'force_sd': [0.002, 0.001, 0.001, 0.001, 0.002, 0.003],
-            'lifetime_sd': [0.017, 0.002, 0.002, 0.003, 0.003, 0.002]
-        },
-        '500': {
-            'force': [0.012, 0.016, 0.019, 0.025, 0.037],
-            'lifetime': [0.075, 0.069, 0.057, 0.035, 0.018],
-            'force_sd': [0.001, 0.001, 0.001, 0.002, 0.002],
-            'lifetime_sd': [0.008, 0.01, 0.005, 0.007, 0.002]
-        }
-    }
-    ```
-    
-    **Prompt:** The bond-life of Cadherin bonds follow catch-slip kinetics. Can you give me a code for the catch-slip bond lifetime but give me the off rate as function
-    
-    **Response:**
-    
-    ```python
-    def k_off_catch_slip(force, Nb, F_s, F_c, phi_s, phi_c):
-        force_nb = np.maximum(0.0, np.minimum(force / Nb, 100))
+### Example: Extracting and Fitting Bond Lifetime Data
+
+This example uses a figure from [Manibog et. al. 2024](https://www.nature.com/articles/ncomms4941) to extract data and perform a data fit using step-by-step prompting.
+
+**Original Figure:**
+
+![Original figure from Manibog et al.](images/image.png)
+
+---
+
+**Step 1: Extract Data**
+
+> **Prompt:** Extract bond lifetime data from figure 5 from the paper in Python.
+
+```python
+original_data = {
+   '1000': {'force': [0.015, 0.021, 0.025, 0.03, 0.035], 
+            'lifetime': [0.028, 0.025, 0.055, 0.032, 0.015]}, 
+   '1500': {'force': [0.011, 0.017, 0.023, 0.029, 0.035, 0.04], 
+            'lifetime': [0.012, 0.011, 0.014, 0.029, 0.044, 0.02]},
+   '2500': {'force': [0.013158, 0.028421, 0.034737, 0.041930],
+            'lifetime': [0.023, 0.086, 0.079, 0.030]},
+   '300':  {'force': [0.019, 0.026, 0.03, 0.035, 0.041, 0.058],
+            'lifetime': [0.075, 0.01, 0.031, 0.021, 0.022, 0.009]},
+   '500':  {'force': [0.012, 0.016, 0.019, 0.025, 0.037],
+            'lifetime': [0.075, 0.069, 0.057, 0.035, 0.018]}
+}
+```
+
+---
+
+**Step 2: Define the Model**
+
+> **Prompt:** The bond-life of Cadherin bonds follow catch-slip kinetics. Give me code for the catch-slip bond lifetime.
+
+```python
+def k_off_catch_slip(force, Nb, F_s, F_c, phi_s, phi_c):
+    force_nb = np.maximum(0.0, np.minimum(force / Nb, 100))
         return (np.exp(force_nb/F_s - phi_s) + np.exp(phi_c - force_nb/ F_c))
     ```
     
@@ -315,7 +320,7 @@ Understanding the environmental impacts of AI and recommendations
     plt.show()
     ```
     
-    ![image.png](AI%20Tools/image%201.png)
+    ![image.png](images/extracted.png)
 
 - **Data Privacy**
     
@@ -375,25 +380,25 @@ Understanding the environmental impacts of AI and recommendations
 
 ## Disrupting Education
 
-- [https://hbsp.harvard.edu/inspiring-minds/using-generative-ai-to-create-role-play-scenarios-for-students](https://hbsp.harvard.edu/inspiring-minds/using-generative-ai-to-create-role-play-scenarios-for-students)
-- [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4802463](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4802463)
+- [Using Generative AI to Create Role-Play Scenarios for Students (Harvard)](https://hbsp.harvard.edu/inspiring-minds/using-generative-ai-to-create-role-play-scenarios-for-students)
+- [AI in Education Research Paper (SSRN)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4802463)
 
 ---
 
 ## Climate Change AI Resources
 
-- [https://www.nist.gov/news-events/news/2025/08/lessons-learned-consortium-tool-use-agent-systems](https://www.nist.gov/news-events/news/2025/08/lessons-learned-consortium-tool-use-agent-systems)
-- [https://www.climatechange.ai/summaries](https://www.climatechange.ai/summaries)
-- [https://www.climatechange.ai/tutorials?type=Ecosystems+and+Biodiversity&diff=Intermediate](https://www.climatechange.ai/tutorials?type=Ecosystems+and+Biodiversity&diff=Intermediate)
-- [https://www.climatechange.ai/papers](https://www.climatechange.ai/papers)
-- [https://www.climatechange.ai/events/neurips2025](https://www.climatechange.ai/events/neurips2025)
+- [Lessons Learned from Consortium on Tool Use Agent Systems (NIST)](https://www.nist.gov/news-events/news/2025/08/lessons-learned-consortium-tool-use-agent-systems)
+- [Climate Change AI Summaries](https://www.climatechange.ai/summaries)
+- [Tutorials: Ecosystems and Biodiversity](https://www.climatechange.ai/tutorials?type=Ecosystems+and+Biodiversity&diff=Intermediate)
+- [Climate Change AI Papers](https://www.climatechange.ai/papers)
+- [NeurIPS 2025 Climate Change AI Events](https://www.climatechange.ai/events/neurips2025)
 
 ---
 
-## Resources
+## Additional Resources
 
-- [https://www.sciencedirect.com/science/article/pii/S0268401223000816](https://www.sciencedirect.com/science/article/pii/S0268401223000816)
-- [https://www.forbes.com/sites/cindygordon/2023/04/30/ai-ethicist-views-on-chatgpt/](https://www.forbes.com/sites/cindygordon/2023/04/30/ai-ethicist-views-on-chatgpt/)
-- [https://ethicspolicy.unc.edu/news/2023/04/17/the-ethics-of-college-students-using-chatgpt/](https://ethicspolicy.unc.edu/news/2023/04/17/the-ethics-of-college-students-using-chatgpt/)
-- [https://pmc.ncbi.nlm.nih.gov/articles/PMC10457697/](https://pmc.ncbi.nlm.nih.gov/articles/PMC10457697/)
-- [https://en.wikipedia.org/wiki/Attention_Is_All_You_Need](https://en.wikipedia.org/wiki/Attention_Is_All_You_Need)
+- [AI and Responsibility (ScienceDirect)](https://www.sciencedirect.com/science/article/pii/S0268401223000816)
+- [AI Ethicist Views on ChatGPT (Forbes)](https://www.forbes.com/sites/cindygordon/2023/04/30/ai-ethicist-views-on-chatgpt/)
+- [The Ethics of College Students Using ChatGPT (UNC)](https://ethicspolicy.unc.edu/news/2023/04/17/the-ethics-of-college-students-using-chatgpt/)
+- [AI in Scientific Writing (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10457697/)
+- [Attention Is All You Need - The Transformer Paper (Wikipedia)](https://en.wikipedia.org/wiki/Attention_Is_All_You_Need)
