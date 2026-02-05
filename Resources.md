@@ -36,10 +36,10 @@ Understanding the environmental impacts of AI and recommendations
 
 ---
 
-> 📌 **Free Resources for Academics (For Grad students)**
+> 📌 **Free Stuff for Nerds**
 > 
 > a. [Get 1 year of free cursor subscription if you are a student](https://cursor.com/students)
-> b. [University students can 1 year free Gemini pro](https://one.google.com/ai-student?g1_landing_page=75)
+> b. [University students can 1 year free Gemini pro and Antigravity](https://one.google.com/ai-student?g1_landing_page=75)
 > c. [Get 2-3 years of free Copilot + Github if you are a faculty or a student](https://docs.github.com/en/copilot/how-tos/manage-your-account/get-free-access-to-copilot-pro) (probably the best option)
 > d. [Perplexity for students at $5/month](https://www.perplexity.ai/backtoschool)
 > e. [Windsurf: just like Cursor but discounted for students](https://windsurf.com/pricing)
@@ -85,7 +85,7 @@ Understanding the environmental impacts of AI and recommendations
 - [Stanford University - Responsible AI Use](https://uit.stanford.edu/security/responsibleai)
 - [MIT AI Guidance](https://ist.mit.edu/ai-guidance)
 
-### Stanford AI Best Practices
+### AI Safety Best Practices(Stanford University)
 
 | Area | Best Practices |
 |------|----------------|
@@ -185,23 +185,6 @@ This example uses a figure from [Manibog et. al. 2024](https://www.nature.com/ar
 **Step 1: Extract Data**
 
 > **Prompt:** Extract bond lifetime data from figure 5 from the paper in Python.
-
-```python
-original_data = {
-   '1000': {'force': [0.015, 0.021, 0.025, 0.03, 0.035], 
-            'lifetime': [0.028, 0.025, 0.055, 0.032, 0.015]}, 
-   '1500': {'force': [0.011, 0.017, 0.023, 0.029, 0.035, 0.04], 
-            'lifetime': [0.012, 0.011, 0.014, 0.029, 0.044, 0.02]},
-   '2500': {'force': [0.013158, 0.028421, 0.034737, 0.041930],
-            'lifetime': [0.023, 0.086, 0.079, 0.030]},
-   '300':  {'force': [0.019, 0.026, 0.03, 0.035, 0.041, 0.058],
-            'lifetime': [0.075, 0.01, 0.031, 0.021, 0.022, 0.009]},
-   '500':  {'force': [0.012, 0.016, 0.019, 0.025, 0.037],
-            'lifetime': [0.075, 0.069, 0.057, 0.035, 0.018]}
-}
-```
-
----
 
 **Step 2: Define the Model**
 
@@ -324,7 +307,7 @@ def k_off_catch_slip(force, Nb, F_s, F_c, phi_s, phi_c):
     plt.show()
     ```
     
-    ![image.png](images/extracted.png)'''
+    ![Extracted Data](images/extracted.png)
 
 - **Data Privacy**
     
@@ -378,7 +361,6 @@ def k_off_catch_slip(force, Nb, F_s, F_c, phi_s, phi_c):
     
     -Data Storage:
       - for each plot also store the data in a .feather file in the same directory where the script is by using data_path = os.getcwd()
-    ```
 
 ---
 

@@ -26,6 +26,14 @@ This is a framework for AI-aided research using **context engineering** to guide
 6. [**Resources**](Resources.md) - Ton of links and resources, some free unsolicited advice and unsubstantiated opinions.
 
 ---
+> 📌 **Free Stuff for Nerds**
+> 
+> a. [Get 1 year of free cursor subscription if you are a student](https://cursor.com/students)
+> b. [University students can 1 year free Gemini pro and Antigravity](https://one.google.com/ai-student?g1_landing_page=75)
+> c. [Get 2-3 years of free Copilot + Github if you are a faculty or a student](https://docs.github.com/en/copilot/how-tos/manage-your-account/get-free-access-to-copilot-pro) (probably the best option)
+> d. [Perplexity for students at $5/month](https://www.perplexity.ai/backtoschool)
+> e. [Windsurf: just like Cursor but discounted for students](https://windsurf.com/pricing)
+
 
 ## 🎯 Example Workflows
 
@@ -43,8 +51,9 @@ This is a framework for AI-aided research using **context engineering** to guide
 - Configure `napari-mcp` and `cellpose-mcp` servers
 - Interactive visualization in napari window and segmentation with cellpose-mcp.
 
-**Example:** Use prompt: *"Can you segment the cells in the image and find the number of cells and the nuclei positions?"*
+**Example:** Use prompt: *"Can you segment the cells in the image plezzzz!"*
 
+![Segmentation Comparison](Image_analysis/demo_images/segmentation_comparison.png)
 ---
 
 ## 🛠 Reference
