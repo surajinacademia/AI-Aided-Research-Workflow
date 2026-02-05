@@ -2,8 +2,6 @@
 
 > This document contains some resources (free!), opinions and some interesting articles on AI safety etc.
 
-[Topics](AI%20Tools/Topics%201818abaef3618100b6cfe658c3ec6e16.csv)
-
 ---
 
 ## Large language models and large reasoning models Leaderboard:
