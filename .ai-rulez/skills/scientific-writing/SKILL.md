@@ -1,5 +1,4 @@
 ---
-name: scientific-writing
 priority: high
 description: Creates concise, structured scientific documents with LaTeX equations, integrated figures, and clear technical writing. Use when documenting results, writing research summaries, or creating technical reports.
 ---

@@ -1,6 +1,7 @@
-# rules
-
-**Priority:** critical
+---
+priority: critical
+description: Main rule for the project
+---
 
 # Main rule for the project
 

@@ -1,6 +1,7 @@
-# project-repo
-
-**Priority:** high
+---
+priority: high
+description: Navigation guide and workflow patterns for AI-aided research framework
+---
 
 # AI Research Workflow - Navigation Guide
 

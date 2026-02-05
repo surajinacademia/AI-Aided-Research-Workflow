@@ -1,6 +1,7 @@
-# image-analysis
-
-**Priority:** high
+---
+priority: high
+description: Biological image analysis using Cellpose MCP and Python packages
+---
 
 # Biological Image Analysis
 

@@ -1,6 +1,7 @@
-# python-coding-standards
-
-**Priority:** high
+---
+priority: high
+description: Python coding standards for scientific computing and data analysis
+---
 
 # Python Coding Standards
 
