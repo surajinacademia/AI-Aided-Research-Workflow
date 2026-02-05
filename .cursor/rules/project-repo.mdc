@@ -1,0 +1,144 @@
+---
+description: Navigation guide and workflow patterns for AI-aided research framework
+alwaysApply: true
+---
+
+# AI Research Workflow - Navigation Guide
+
+This project demonstrates context engineering for AI-aided research workflows.
+
+**📖 Full documentation:** See `README.md` for complete information about this framework.
+
+## Project Structure Quick Reference
+
+Key locations in this repository:
+
+- **`.cursor/rules/`** - AI guidance rules (see `rules.mdc` for complete listing)
+- **`.cursor/commands/`** - Command shortcuts (e.g., `git.md` for git workflows)
+- **`.cursor/agents/`** - Specialized agents (e.g., `literature-review.md`)
+- **`Data_analysis/`** - Example datasets and data analysis workflows
+- **`Image_analysis/demo_images/`** - 23 sample microscopy images for testing
+
+## Navigation Patterns
+
+### When Working With Data Analysis
+
+**Check for examples:** `Data_analysis/` folder
+
+**Auto-applied rules:** `rules.mdc`, `python-coding-standards.mdc`
+
+**Workflow:**
+
+1. Reference example datasets in `Data_analysis/`
+2. Follow pandas/matplotlib patterns from rules
+3. Save results as CSV, plots as SVG
+
+### When Working With Images
+
+**Sample images:** `Image_analysis/demo_images/` (23 microscopy images)
+
+**Auto-applied rule:** `Image-analysis.mdc` (activates for `.png` files)
+
+**MCP tools:** Prioritize `napari-mcp` and `cellpose` for analysis
+
+**Workflow:**
+
+1. Use napari-mcp for interactive visualization
+2. Use cellpose for segmentation
+3. Extract quantitative metrics
+4. Only write custom scripts when explicitly requested
+
+### When Working With Scientific Computing
+
+**MCP tools available:**
+
+- `sympy-mcp` - Symbolic mathematics (calculus, algebra, differential equations)
+- `fmcp` - Mathematical plotting (matplotlib, numpy integration)
+
+**Workflow:**
+
+1. Solve equations symbolically with sympy-mcp
+2. Generate publication-quality plots with fmcp
+3. Document equations in LaTeX format
+
+### When Doing Literature Research
+
+**Agent:** Use `@literature-review` agent for comprehensive searches
+
+**Capabilities:** Searches local papers, Zotero library, and web sources
+
+**Use for:** Citations, experimental findings, theoretical background
+
+## MCP Integration Philosophy
+
+**✅ Use MCPs for:**
+
+- Specialized tools (cellpose segmentation, symbolic math)
+- Interactive capabilities (napari visualization)
+- Tested, maintained implementations
+- Avoiding reinventing the wheel
+
+**❌ Write custom code for:**
+
+- Project-specific logic
+- Simple data transformations
+- Performance-critical operations
+- Tight integration with existing codebase
+
+## Context Engineering Patterns
+
+**Layered rule approach:**
+
+1. **Base layer:** General standards (`rules.mdc`)
+2. **Language layer:** Python patterns (`python-coding-standards.mdc`)
+3. **Task layer:** Workflow-specific (`Image-analysis.mdc`)
+
+**When to create new rules:**
+
+- Pattern repeats 3+ times in conversations
+- AI makes the same mistake repeatedly
+- Team needs consistent standards
+- Use `@create-rule` skill for guidance on rule creation
+
+**Rule best practices:**
+
+- Keep rules under 500 lines (ideally under 50)
+- Provide concrete examples (good vs bad patterns)
+- Reference files instead of copying content
+- Focus on actionable guidance, not documentation
+
+## Common Workflows
+
+### Research Data Analysis
+
+1. Provide dataset → 2. Create plan → 3. Execute with rule guidance → 4. Document results
+
+### Image Analysis Pipeline
+
+1. Reference `@Image_analysis/demo_images/` → 2. Use napari-mcp for visualization → 3. Use cellpose for segmentation → 4. Extract metrics
+
+### Creating New Rules
+
+1. Notice repetitive pattern → 2. Use `@create-rule` skill → 3. Define scope and examples → 4. Test and refine
+
+## File Organization Standards
+
+**Jupyter notebooks:**
+
+- Use jupytext for `.py` ↔ `.ipynb` sync
+- **Always edit `.py` files** (notebooks sync automatically)
+- Use `# %%` for code cells, `# %% [markdown]` for markdown
+
+**Data storage:**
+
+- CSV for tabular data
+- SVG for publication-quality figures
+- PNG for raster images
+- Organize in dedicated folders
+
+## Quick Tips
+
+- **Reference, don't duplicate:** Point to README.md and existing files
+- **Layer your context:** Build from general → specific rules
+- **Combine tools:** Rules + MCPs + Skills work together seamlessly
+- **Iterate patterns:** Start minimal, add rules as patterns emerge

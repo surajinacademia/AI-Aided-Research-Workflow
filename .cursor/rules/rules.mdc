@@ -1,0 +1,78 @@
+---
+description: Main rule for the project
+alwaysApply: true
+---
+
+# Main rule for the project
+
+The agent is an expert in:
+- **Data Analysis**: Exploratory data analysis, statistical analysis, data visualization
+- **Image Analysis**: Microscopy image processing, segmentation, quantification
+- **Scientific Computing**: Numerical methods, symbolic mathematics, visualization
+- **AI Agents & MCPs**: Model Context Protocol integration, agent workflows, context engineering
+
+
+## Location of important files
+
+- **Rules** (`.cursor/rules/`)
+  - `project-repo.mdc`: Repository structure documentation and navigation guide for AI agents
+  - `python-coding-standards.mdc`: Python coding patterns, best practices, and visualization standards
+  - `Image-analysis.mdc`: Image analysis workflow patterns and MCP tool prioritization
+  - `rules.mdc`: Main rule file with project-wide standards and expert domains
+
+- **Skills** (system-level at `~/.cursor/skills-cursor/`)
+  - `create-rule`: Create Cursor rules for persistent AI guidance
+  - `create-skill`: Guide for creating effective Agent Skills
+  - `update-cursor-settings`: Modify Cursor/VSCode settings.json
+
+- **Commands** (`.cursor/commands/`)
+  - `git.md`: Complete GitHub workflow with quick commit & push commands, manual workflows, and status checking
+
+- **Agents** (`.cursor/agents/`)
+  - `literature-review.md`: Expert literature research specialist for biophysics and cell mechanics, performs semantic searches across local papers, Zotero library, and web sources
+
+- **MCPs** (system-level configuration)
+  - `napari-mcp`: Interactive image visualization and analysis
+  - `cellpose`: Cell segmentation and quantification
+  - `fmcp`: Mathematical plotting (matplotlib, numpy, sympy)
+  - `sympy-mcp`: Symbolic mathematics and calculus
+  - `claude-scientific-skills`: Scientific computing capabilities
+  - `data-forge`: Data manipulation and analysis
+  - `Notion`: Notion workspace integration
+  - `Zotero`: Zotero library access for literature management
+  - `cursor-ide-browser`: Browser automation for testing
+
+## Non-negotiable rules
+
+- Provide concise and clear explanations of the code generated
+- Always ask questions to the user and do not make assumptions.
+- Prioritize code that is:
+  - **Readable**
+  - **Editable**
+  - **Reproducible**
+  - **Simple**
+  - **Modular**
+  - **Concise**
+- Write concise, technical responses
+
+## Data Analysis
+
+- Use python-coding-standards.mdc for coding standards and best practices.
+- Use pandas, numpy, scipy, matplotlib, and other libraries for data analysis and visualization.
+
+## Image Analysis Expertise
+
+**Tools and Integration:**
+- **napari-mcp**: Interactive image visualization and analysis
+- **cellpose-mcp**: Cell segmentation and quantification
+- Prioritize MCP tools over custom implementations
+- Extract quantitative metrics
+- Document analysis steps
+- Validate segmentation results visually
+- Use `sympy-mcp` for calculus, algebra, differential equations
+- Generate LaTeX equations for documentation
+- Solve systems symbolically before numerical implementation
+- Use `fmcp` for mathematical plotting (matplotlib, numpy)
+- Vectorized operations for performance
+- Scientific plotting conventions
+ 
