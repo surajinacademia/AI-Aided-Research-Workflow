@@ -14,7 +14,7 @@
 
 ## 🚀 Introduction
 
-This is a framework for AI-aided research using **context engineering** to guide AI agents for coding, data analysis, image analysis, and scientific computing. This repository demonstrates how to move beyond simple prompting to sophisticated agent-based workflows using rules, skills, MCPs, and subagents. The key philosophy is to provide the right structure, rules, and tools so AI agents work autonomously and reliably on complex research tasks. You can use any IDE like Cursor, VS Code, Antigravity, etc. for this framework. Airulez will automatically sync all the tools across the IDEs.
+This is a framework for AI-aided research using **context engineering** to guide AI agents for coding, data analysis, image analysis, and scientific computing. This repository demonstrates how to move beyond simple prompting to sophisticated agent-based workflows using rules, skills, MCPs, and subagents. The key philosophy is to provide the right structure, rules, and tools so AI agents work autonomously and reliably on complex research tasks. You can use any IDE like Cursor, VS Code, Antigravity, etc. for this framework. Airulez [https://goldziher.github.io/ai-rulez/](https://goldziher.github.io/ai-rulez/) will automatically sync all the tools across the IDEs. One ring to rule them all.
 
 ### 📌 In this repository:
 

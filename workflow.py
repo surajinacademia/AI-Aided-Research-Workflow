@@ -16,7 +16,7 @@
 # ---
 
 # %% [markdown]
-# # Workflow
+# # Beyond Prompting
 
 # %% [markdown]
 # <img src="images/1.png" width="100%">
