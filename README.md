@@ -1,14 +1,23 @@
-# AI Research Workflow
+# AI Research Workflow for Physics Nerds
+
+## Abstract
+
+Despite the excitement surrounding AI integration in academic research, a widespread misunderstanding of the capabilities and limitations of Large Language Models (LLMs) often leads to poor performance, hallucinations, buggy code, and data privacy concerns. While AI chatbots have become remarkably powerful(potentially dangerous) aligning user expectations with model responses is often frustrating and suboptimal. In this talk I will show examples of context engineering and effective prompting techniques. We will discuss agentic capabilities that leverage tools for image analysis and explore how custom instructions and rules can guide AI toward better results while maintaining your data private. Additionally, I will demonstrate how to custom-design agents for data analysis and literature organization to extract key information from dense academic papers. Finally, I will showcase tools—including Cursor, MCP (Model Context Protocol), Antigravity, and Claude’s scientific skills—that facilitate a more efficient research workflow. As LLMs consume significant energy,  understanding their strengths and limitations is essential for sustainable integration.
+
+**Keywords: Agents, image analysis, data analysis, context engineering, Custom workflows **
 
 A framework for AI-aided research using **context engineering** to guide AI agents for coding, data analysis, image analysis, and scientific computing. This repository demonstrates how to move beyond simple prompting to sophisticated agent-based workflows using rules, skills, MCPs, and subagents. The key philosophy is to provide the right structure, rules, and tools so AI agents work autonomously and reliably on complex research tasks.
 
 In this repository you will find information about:
 
 - **Rules**: Instructions that guide AI behavior in generating code, editing files, and creating files. Located in `.cursor/rules/`. Rules are written in markdown in multiple files, each focusing on specific tasks. For example, `project-repo.mdc` guides the AI on how to organize the project repository. `python-coding-standards.mdc` specifies coding standards and best practices. The main rule, `rules.mdc`, specifies the project goals and lists all available rules, skills, subagents, MCPs, and commands.
+
 - **Tool Integration**: Connecting AI to MCPs (Model Context Protocol) to leverage specialized tools for complex tasks, such as `napari-mcp` (image visualization), `cellpose` (cell segmentation), `sympy-mcp` (symbolic math), and `fmcp` (scientific plotting). See [mcpservers.org](https://mcpservers.org).
-- **Plan**: Plans allow you to get a more structured and detailed, step-by-step to-do list for the AI to follow. This helps move from vague prompts to structured execution, significantly improving code quality.
+
 - **Subagents**: Specialized agents that run in the background and interact with the main agent. They do not share the main agent's context window, preserving memory. For example, the `literature-review` subagent searches literature and provides citations.
+
 - **Skills**: Reusable capabilities providing domain-specific tools and knowledge. For example, scientific writing skills for LaTeX or cluster execution.
+
 - **Commands**: Shortcuts for repetitive tasks that don't require deep reasoning. For example, the `/git` command helps with version control.
 
 ## Repository Structure

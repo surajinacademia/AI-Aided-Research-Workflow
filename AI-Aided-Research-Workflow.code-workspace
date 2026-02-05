@@ -4,5 +4,16 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"jupytext.languages": "python\nnotebook",
+		"notebook.formatOnSave.enabled": true,
+		"notebook.codeActionsOnSave": {
+			"runCell": "always"
+		}
+	},
+	"extensions": {
+		"recommendations": [
+			"parmentelat.vscode-jupytext"
+		]
+	}
 }
