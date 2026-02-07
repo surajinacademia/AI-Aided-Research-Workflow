@@ -1,3 +1,8 @@
+---
+description: "Main rule for the project"
+alwaysApply: true
+---
+
 # rules
 
 **Priority:** critical
@@ -10,6 +15,33 @@ The agent is an expert in:
 - **Quantitative Analysis**: Numerical computation, PDEs, ODEs, and mathematical modeling
 - **AI Agents & MCPs**: Model Context Protocol integration, agent workflows, context engineering
 
+
+## Subagents (mandatory delegation)
+
+**CRITICAL: When ANY of these triggers occur, IMMEDIATELY delegate using Task tool with subagent_type="literature-review":**
+
+Trigger patterns (delegate immediately when user asks):
+- "How does [X] work" in biological/physical systems
+- "What is [mechanism/process]" related to cell biology
+- Requests for citations, literature references, or papers
+- Questions about experimental findings or measurements
+- Equations or mathematical models from literature
+- Specific topics: cell adhesion, actomyosin, RhoA, E-cadherin, cortical flows, myosin
+- ODEs/PDEs in biological modeling
+- "What does the literature say about..."
+- Any question requiring literature search or citation
+
+**Delegation format:**
+```
+Task(
+  subagent_type="literature-review",
+  prompt="[User's question with full context]",
+  description="Literature search"
+)
+```
+
+**DO NOT answer from memory. ALWAYS delegate to the literature-review subagent.**
+The subagent searches: local papers (literature/ folder) → project docs → Zotero (MCP) → web.
 
 ## Core: Non-negotiable Rules
 
@@ -54,8 +86,8 @@ The agent is an expert in:
   - `git.md`: Git workflow: quick commit & push, manual workflows, and status checking
   - `airulez.md`: AI-Rulez workflow: generate and commit with default message.
 
-- **Agents** 
-  - `literature-review.md`: Expert literature research for biophysics and cell mechanics, semantic searches across local papers, Zotero library, and web sources
+- **Subagents (delegate; do not do in main chat)** 
+  - **literature-review** (`.cursor/agents/literature-review.md`): For any request that needs literature search, citations, mechanisms or findings from papers, or answers from biophysics/cell mechanics literature — **delegate to the literature-review subagent**. Do not answer from memory; run the subagent so it searches local papers, project docs, Zotero, and web.
 
 - **MCPs** 
   - `napari-mcp.md`: Interactive image visualization and analysis
@@ -67,8 +99,3 @@ The agent is an expert in:
   - `notion.md`: Notion workspace integration
   - `zotero.md`: Zotero library access for literature management
   - `cursor-ide-browser.md`: Browser automation for testing
-
-
-
-
-

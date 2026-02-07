@@ -1,3 +1,9 @@
+---
+description: "Python coding standards for scientific computing and data analysis"
+alwaysApply: false
+globs: ["*.py", "*.ipynb"]
+---
+
 # python-coding-standards
 
 **Priority:** high

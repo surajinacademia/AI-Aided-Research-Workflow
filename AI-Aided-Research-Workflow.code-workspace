@@ -9,7 +9,8 @@
 		"notebook.formatOnSave.enabled": true,
 		"notebook.codeActionsOnSave": {
 			"runCell": "always"
-		}
+		},
+		"markdown.preview.fontFamily": "CMU Bright"
 	},
 	"extensions": {
 		"recommendations": [
