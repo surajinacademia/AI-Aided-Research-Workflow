@@ -29,34 +29,42 @@ This is a framework for AI-aided research using **context engineering** to guide
 > 📌 **Free Stuff for Nerds**
 > 
 > a. [Get 1 year of free cursor subscription if you are a student](https://cursor.com/students)
+
 > b. [University students can 1 year free Gemini pro and Antigravity](https://one.google.com/ai-student?g1_landing_page=75)
+
 > c. [Get 2-3 years of free Copilot + Github if you are a faculty or a student](https://docs.github.com/en/copilot/how-tos/manage-your-account/get-free-access-to-copilot-pro) (probably the best option)
+
 > d. [Perplexity for students at $5/month](https://www.perplexity.ai/backtoschool)
+
 > e. [Windsurf: just like Cursor but discounted for students](https://windsurf.com/pricing)
 
 
-## 🎯 Example Workflows
+## 🎯 Bad Example Workflows
 
 ### 📊 Data Analysis
 
-- Rules define pandas operations and visualization standards for data analysis.
-- Provide dataset and high-level analysis goals
-- AI creates analysis plan with specific questions
-- Generate exploratory analysis, statistics, and visualizations
-
-**Example:** `Data_analysis/road_accident_dataset.csv` - accident patterns by country, region, time, severity
+**Example:** Can you analyze the accident patterns in the dataset `road_accident_dataset.csv` by country, region, time, severity.
 
 ### 🔬 Image Analysis
 
-- Configure `napari-mcp` and `cellpose-mcp` servers
-- Interactive visualization in napari window and segmentation with cellpose-mcp.
+**Example:***"Can you segment the cells in the image plezzzz!"*
 
-**Example:** Use prompt: *"Can you segment the cells in the image plezzzz!"*
-
+The AI agent will use cellpose-mcp to segment image and spit you this. 
 ![Segmentation Comparison](Image_analysis/demo_images/segmentation_comparison.png)
 ---
 
-## 🛠 Reference
+But this is not what you want as a researcher. You want to use the ai agent to also tell you how it got the results, verify them and adhere to you scientific workflow standards. So the workflow should depend on the level of complexity, state of your project and the goal you set up that day. 
+
+
+1. Setup rules, skills, mcp servers, subagents and commands for the project.
+2. Create a plan for the task that includes
+    - Goal: The hypothesis you want to test, the idea you want to implement.
+    - Approach
+    - Example
+    - Expected Output
+    - Verification
+3. Use a thinking/reasoning model for the plan and go over it iteratively until you are satisfied with the plan. You can then use a less powerful model to generate the code for you. 
+
 
 ### 📋 Rules
 
