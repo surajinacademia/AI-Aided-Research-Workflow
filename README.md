@@ -14,7 +14,7 @@
 
 ## 🚀 Introduction
 
-This is a framework for AI-aided research using **context engineering** to guide AI agents for coding, data analysis, image analysis, and scientific computing. This repository demonstrates how to move beyond simple prompting to sophisticated agent-based workflows using rules, skills, MCPs, and subagents. The key philosophy is to provide the right structure, rules, and tools so AI agents work autonomously and reliably on complex research tasks. You can use any IDE like Cursor, VS Code, Antigravity, etc. for this framework as [airulez](https://goldziher.github.io/ai-rulez/) will automatically sync all the tools across the IDEs. One ring to rule them all!
+This is a framework for AI-aided research using **context engineering** to guide AI agents for coding, data analysis, image analysis, and scientific computing. This repository demonstrates how to move beyond simple prompting to sophisticated agent-based workflows using rules, skills, MCPs, and subagents. The key philosophy is to provide the right structure, rules, and tools so AI agents work autonomously and reliably on complex research tasks. You can use any IDE like Cursor, VS Code, Antigravity, etc.  
 
 ### 📌 In this repository:
 
@@ -70,10 +70,10 @@ But this is not what you want as a researcher. You want to use the ai agent to a
 
 | Rule | Description | When Applied |
 |------|-------------|--------------|
-| `rules.md` | Main rule file with project-wide standards and expert domains | Always |
-| `python-coding-standards.md` | Python coding patterns, best practices, and visualization standards | Always |
-| `Image-analysis.md` | Image analysis workflow patterns and MCP tool prioritization | For `.png` files |
-| `project-repo.md` | Repository structure documentation and navigation guide for AI agents | Always |
+| [``.cursor/rules/rules.mdc``](.cursor/rules/rules.mdc) | Main rule file with project-wide standards and expert domains | Always |
+| [``.cursor/rules/python-coding-standards.mdc``](.cursor/rules/python-coding-standards.mdc) | Python coding patterns, best practices, and visualization standards | Always |
+| [``.cursor/rules/Image-analysis.mdc``](.cursor/rules/Image-analysis.mdc) | Image analysis workflow patterns and MCP tool prioritization | For `.png` files |
+| [``.cursor/rules/project-repo.mdc``](.cursor/rules/project-repo.mdc) | Repository structure documentation and navigation guide for AI agents | Always |
 
 ### 🔌 MCP Servers
 
@@ -93,20 +93,19 @@ But this is not what you want as a researcher. You want to use the ai agent to a
 
 | Skill | Purpose |
 |-------|---------|
-| `scientific-writing` | Creates concise, structured scientific documents with LaTeX equations, integrated figures, and clear technical writing |
+| [`.cursor/skills/scientific-writing/SKILL.md`](.cursor/skills/scientific-writing/SKILL.md) | Creates concise, structured scientific documents with LaTeX equations, integrated figures, and clear technical writing |
 
 ### 🤖 Subagents
 
 | Subagent | Purpose |
 |----------|---------|
-| `literature-review` | Expert literature research for biophysics and cell mechanics, semantic searches across local papers, Zotero library, and web sources |
+| [`.cursor/agents/literature-review.md`](.cursor/agents/literature-review.md) | Expert literature research for biophysics and cell mechanics, semantic searches across local papers, Zotero library, and web sources |
 
 ### 💻 Commands
 
 | Command | Purpose |
 |---------|---------|
-| `git` | Complete GitHub workflow: quick commit & push for small updates, detailed workflow for significant changes with proposed commit messages |
-| `airulez` | AI-Rulez workflow: generate and commit with default message. |
+| [``.cursor/commands/git.md``](.cursor/commands/git.md) | Complete GitHub workflow: quick commit & push for small updates, detailed workflow for significant changes with proposed commit messages |
 
 ---
 

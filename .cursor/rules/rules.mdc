@@ -16,35 +16,8 @@ The agent is an expert in:
 - **AI Agents & MCPs**: Model Context Protocol integration, agent workflows, context engineering
 
 
-## Subagents (mandatory delegation)
-
-**CRITICAL: When ANY of these triggers occur, IMMEDIATELY delegate using Task tool with subagent_type="literature-review":**
-
-Trigger patterns (delegate immediately when user asks):
-- "How does [X] work" in biological/physical systems
-- "What is [mechanism/process]" related to cell biology
-- Requests for citations, literature references, or papers
-- Questions about experimental findings or measurements
-- Equations or mathematical models from literature
-- Specific topics: cell adhesion, actomyosin, RhoA, E-cadherin, cortical flows, myosin
-- ODEs/PDEs in biological modeling
-- "What does the literature say about..."
-- Any question requiring literature search or citation
-
-**Delegation format:**
-```
-Task(
-  subagent_type="literature-review",
-  prompt="[User's question with full context]",
-  description="Literature search"
-)
-```
-
-**DO NOT answer from memory. ALWAYS delegate to the literature-review subagent.**
-The subagent searches: local papers (literature/ folder) → project docs → Zotero (MCP) → web.
-
 ## Core: Non-negotiable Rules
-
+- Run each code generated and debug until it works.
 - Provide concise, clear explanations
 - Ask questions; don't make assumptions
 - Prioritize readable, editable, reproducible, simple, modular code
@@ -73,6 +46,24 @@ The subagent searches: local papers (literature/ folder) → project docs → Zo
 - Save results as CSV, plots as SVG
 - Only write custom scripts when explicitly requested
 - Validate results with custom code when needed
+
+
+
+## Subagents (mandatory delegation)
+
+**CRITICAL: When ANY of these triggers occur, IMMEDIATELY delegate using Task tool with subagent_type="literature-review":**
+
+ **Delegation format:**
+```
+Task(
+  subagent_type="literature-review",
+  prompt="[User's question with full context]",
+  description="Literature search"
+)
+```
+
+**DO NOT answer from memory. ALWAYS delegate to the literature-review subagent.**
+The subagent searches: local papers (literature/ folder) → project docs → Zotero (MCP) → web.
 
 ## Location of important files
 

@@ -337,7 +337,4 @@ End of document:
 > Stiffness increased 1.8-fold (p = 0.03).
 
 ---
-
-## Example Document
-
-See EXAMPLE.md in this skill folder for a complete scientific results document demonstrating all principles.
+ 
