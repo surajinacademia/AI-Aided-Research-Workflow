@@ -23,7 +23,7 @@
 # - Legal Disclaimer:
 #   - I am not an ML/AI proficient researcher. I don't understand how LLM works.
 #   - These tools are not for people without prior basic knowledge in programming and research experience. 
-#   - Jevons paradox: productivity gains from tools and efficiency tips don't reduce work hours but instead enable taking on more work, leaving work-life balance unchanged or worse.
+#   - Jevons paradox: productivity gains from these tools doesn't lead to reduced workload but instead keeping work-life balance unchanged or worse.
 #
 
 # %% [markdown]
