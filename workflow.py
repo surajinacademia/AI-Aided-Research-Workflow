@@ -121,7 +121,7 @@
 #
 
 # %% [markdown]
-# The Chef analogy
+# The Chef kitchen
 # <img src="images/4.jpg" width="100%">
 #
 
@@ -131,6 +131,17 @@
 
 # %% [markdown]
 # PLANS
+#
+# 1. plan mode allows you to create
+#     - Goals
+#     - Key references
+#     - High-level steps and pseudocode
+#     - Step by step instructions with reasoning and algorithmic steps
+#     - Optional features to implement
+#     - Mermaid flowchart
+#     - Example code
+#     - Documentation/walkthrough after execution
+#     - **To-do list**
 #
 
 # %% [markdown]

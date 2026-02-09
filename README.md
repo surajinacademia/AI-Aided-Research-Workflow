@@ -39,7 +39,7 @@ This is a framework for AI-aided research using **context engineering** to guide
 > e. [Windsurf: just like Cursor but discounted for students](https://windsurf.com/pricing)
 
 
-## 🎯 Bad Example Workflows
+## ❌ Bad Example Workflows
 
 ### 📊 Data Analysis
 
@@ -59,10 +59,10 @@ But this is not what you want as a researcher. You want to use the ai agent to a
 1. Setup rules, skills, mcp servers, subagents and commands for the project.
 2. Create a plan for the task that includes
     - Goal: The hypothesis you want to test, the idea you want to implement.
-    - Approach
-    - Example
-    - Expected Output
-    - Verification
+    - Approach: This is where your thinking and scientific rigour comes in. Usually you start with a vauge, high level idea. but itteratively you refine it into a more specific, testable hypothesis. Though you run the risk of over-specific and way to detalied and long that leads to [Context Rot](https://research.trychroma.com/context-rot)
+    - Example: You may want to give a short example of how the code should be written. Usually the AI helps you with this. But you can also provide references.
+    - Expected Output: What exactly the results should be, data format, plots, tables, etc.
+    - Verification: This is usually the end step and depending on the problem you are working on. 
 3. Use a thinking/reasoning model for the plan and go over it iteratively until you are satisfied with the plan. You can then use a less powerful model to generate the code for you. 
 
 
@@ -70,10 +70,10 @@ But this is not what you want as a researcher. You want to use the ai agent to a
 
 | Rule | Description | When Applied |
 |------|-------------|--------------|
-| [``.cursor/rules/rules.mdc``](.cursor/rules/rules.mdc) | Main rule file with project-wide standards and expert domains | Always |
-| [``.cursor/rules/python-coding-standards.mdc``](.cursor/rules/python-coding-standards.mdc) | Python coding patterns, best practices, and visualization standards | Always |
-| [``.cursor/rules/Image-analysis.mdc``](.cursor/rules/Image-analysis.mdc) | Image analysis workflow patterns and MCP tool prioritization | For `.png` files |
-| [``.cursor/rules/project-repo.mdc``](.cursor/rules/project-repo.mdc) | Repository structure documentation and navigation guide for AI agents | Always |
+| [``rules.mdc``](.cursor/rules/rules.mdc) | Main rule file with project-wide standards and expert domains | Always |
+| [``python-coding-standards.mdc``](.cursor/rules/python-coding-standards.mdc) | Python coding patterns, best practices, and visualization standards | Always |
+| [``Image-analysis.mdc``](.cursor/rules/Image-analysis.mdc) | Image analysis workflow patterns and MCP tool prioritization | For `.png` files |
+| [``project-repo.mdc``](.cursor/rules/project-repo.mdc) | Repository structure documentation and navigation guide for AI agents | Always |
 
 ### 🔌 MCP Servers
 
@@ -93,19 +93,19 @@ But this is not what you want as a researcher. You want to use the ai agent to a
 
 | Skill | Purpose |
 |-------|---------|
-| [`.cursor/skills/scientific-writing/SKILL.md`](.cursor/skills/scientific-writing/SKILL.md) | Creates concise, structured scientific documents with LaTeX equations, integrated figures, and clear technical writing |
+| [``scientific-writing/SKILL.md``](.cursor/skills/scientific-writing/SKILL.md) | Creates concise, structured scientific documents with LaTeX equations, integrated figures, and clear technical writing |
 
 ### 🤖 Subagents
 
 | Subagent | Purpose |
 |----------|---------|
-| [`.cursor/agents/literature-review.md`](.cursor/agents/literature-review.md) | Expert literature research for biophysics and cell mechanics, semantic searches across local papers, Zotero library, and web sources |
+| [``literature-review.md``](.cursor/agents/literature-review.md) | Expert literature research for biophysics and cell mechanics, semantic searches across local papers, Zotero library, and web sources |
 
 ### 💻 Commands
 
 | Command | Purpose |
 |---------|---------|
-| [``.cursor/commands/git.md``](.cursor/commands/git.md) | Complete GitHub workflow: quick commit & push for small updates, detailed workflow for significant changes with proposed commit messages |
+| [``git.md``](.cursor/commands/git.md) | Complete GitHub workflow: quick commit & push for small updates, detailed workflow for significant changes with proposed commit messages |
 
 ---
 
