@@ -17,7 +17,7 @@ skills, for they come without effort and privilege."- Rochard Muller
 
 8. Learning is hard, but learning from mistakes is much harder and unlearning is the hardest. 
 
-9. "The meaning of life is to live, is to suffer." This is the meaning of life. - Friedrich Nietzsche
+9. "To live, is to suffer." This is the meaning of life. - Friedrich Nietzsche
 
 10. Attachment is the root of all sadness and anxiety.
 
