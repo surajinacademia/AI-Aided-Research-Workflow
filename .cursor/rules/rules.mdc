@@ -1,92 +1,79 @@
 ---
 description: "Main rule for the project"
 alwaysApply: true
+priority: critical
 ---
 
-# rules
+# AI-Aided Research Workflow Rules
 
-**Priority:** critical
+## Agent Expertise
+Data analysis • Image analysis • Quantitative modeling • AI agents & MCPs
 
-# Main rule for the project
+---
 
-The agent is an expert in:
-- **Data Analysis**: Exploratory data analysis, statistical analysis, data visualization
-- **Image Analysis**: Microscopy image processing, segmentation, quantification
-- **Quantitative Analysis**: Numerical computation, PDEs, ODEs, and mathematical modeling
-- **AI Agents & MCPs**: Model Context Protocol integration, agent workflows, context engineering
+## CORE (Non-Negotiable)
 
+**Code Quality:**
+- Test ALL code before responding (debug until working)
+- Style: readable, modular, reproducible, simple
+- Save: results → CSV, plots → SVG
 
-## Core: Non-negotiable Rules
-- Run each code generated and debug until it works.
-- Provide concise, clear explanations
-- Ask questions; don't make assumptions
-- Prioritize readable, editable, reproducible, simple, modular code
-- Write concise, technical responses
+**Communication:**
+- Concise, technical responses
+- Ask questions > make assumptions
+- Explain when necessary, code when sufficient
+
+---
 
 ## Data Analysis
-- Use pandas, numpy, scipy, matplotlib for analysis and visualization
-
-## Image Analysis Expertise
-
-**Tools and Integration:**
-- **napari-mcp**: Interactive image visualization and analysis
-- **cellpose-mcp**: Cell segmentation and quantification
-- Prioritize MCP tools over custom implementations
-- Extract quantitative metrics and validate results visually
+- Stack: pandas, numpy, scipy, matplotlib
+- Workflow: EDA → statistical analysis → visualization
 - Document analysis steps
 
-**Mathematical Tools:**
-- Use sympy-mcp for calculus, algebra, differential equations
-- Use fmcp for mathematical plotting (matplotlib, numpy)
-- Generate LaTeX equations for documentation
-- Solve systems symbolically before numerical implementation
-- Vectorized operations for performance
+---
+
+## Image Analysis
+
+**Default Stack:**
+- **napari-mcp**: Interactive visualization and analysis
+- **cellpose-mcp**: Cell segmentation and quantification
+
+**Rules:**
+- Use MCPs first → custom code only if insufficient
+- Extract quantitative metrics + visual validation
+- Document analysis pipeline
+
+---
+
+## Mathematical Modeling
+
+**Tools:**
+- **sympy-mcp**: Symbolic math (calculus, algebra, differential equations)
+- **fmcp**: Mathematical plotting (matplotlib, numpy)
 
 **Workflow:**
-- Save results as CSV, plots as SVG
-- Only write custom scripts when explicitly requested
-- Validate results with custom code when needed
+1. Solve symbolically (when possible)
+2. Generate LaTeX documentation
+3. Vectorized numerical implementation
 
+.cursor/
+├── rules/
+│   ├── rules.md                    # This file - core standards
+│   ├── project-repo.md             # Repo structure guide
+│   ├── python-coding-standards.md  # Python patterns
+│   └── image-analysis.md           # Image workflow patterns
+├── agents/
+│   └── literature-review.md        # Paper search subagent (DELEGATE!)
+├── commands/
+│   ├── git.md                      # Git workflows
+│   └── airulez.md                  # AI-Rulez automation
+└── mcp/
+    ├── napari-mcp.md               # Image visualization
+    ├── cellpose.md                 # Cell segmentation
+    ├── fmcp.md                     # Math plotting
+    ├── sympy-mcp.md                # Symbolic math
+    ├── data-forge.md               # Data manipulation
+    ├── notion.md                   # Notion integration
+    ├── zotero.md                   # Literature management
+    └── cursor-ide-browser.md       # Browser automation
 
-
-## Subagents (mandatory delegation)
-
-**CRITICAL: When ANY of these triggers occur, IMMEDIATELY delegate using Task tool with subagent_type="literature-review":**
-
- **Delegation format:**
-```
-Task(
-  subagent_type="literature-review",
-  prompt="[User's question with full context]",
-  description="Literature search"
-)
-```
-
-**DO NOT answer from memory. ALWAYS delegate to the literature-review subagent.**
-The subagent searches: local papers (literature/ folder) → project docs → Zotero (MCP) → web.
-
-## Location of important files
-
-- **Rules** 
-  - `rules.md`: Main rule file with project-wide standards and expert domains
-  - project-repo.md: Repository structure documentation and navigation guide for AI agents
-  - python-coding-standards.md: Python coding patterns, best practices, and visualization standards
-  - image-analysis.md: Image analysis workflow patterns and MCP tool prioritization
-
-- **Commands** 
-  - `git.md`: Git workflow: quick commit & push, manual workflows, and status checking
-  - `airulez.md`: AI-Rulez workflow: generate and commit with default message.
-
-- **Subagents (delegate; do not do in main chat)** 
-  - **literature-review** (`.cursor/agents/literature-review.md`): For any request that needs literature search, citations, mechanisms or findings from papers, or answers from biophysics/cell mechanics literature — **delegate to the literature-review subagent**. Do not answer from memory; run the subagent so it searches local papers, project docs, Zotero, and web.
-
-- **MCPs** 
-  - `napari-mcp.md`: Interactive image visualization and analysis
-  - `cellpose.md`: Cell segmentation and quantification
-  - `fmcp.md`: Mathematical plotting (matplotlib, numpy, sympy)
-  - `sympy-mcp.md`: Symbolic mathematics and calculus
-  - `claude-scientific-skills.md`: Scientific computing capabilities
-  - `data-forge.md`: Data manipulation and analysis
-  - `notion.md`: Notion workspace integration
-  - `zotero.md`: Zotero library access for literature management
-  - `cursor-ide-browser.md`: Browser automation for testing
