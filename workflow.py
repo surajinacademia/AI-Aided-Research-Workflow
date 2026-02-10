@@ -42,6 +42,11 @@
 #
 
 # %% [markdown]
+# IDE
+#
+# - Inline edit and Predictive Text
+
+# %% [markdown]
 # Prompting basics
 #
 # <img src="images/6.png" width="100%">
@@ -141,7 +146,9 @@
 #     - Mermaid flowchart
 #     - Example code
 #     - Documentation/walkthrough after execution
-#     - **To-do list**
+#     - <span style="color: red;">**To-do list**</span>
+#     - Agents, Skills and tools to be used in the bulding process
+#     - <span style="color: red;">**Verification and validation steps**</span>
 #
 
 # %% [markdown]
