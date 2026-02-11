@@ -22,7 +22,7 @@
 # %% [markdown]
 # - Legal Disclaimer:
 #   - I am not an ML/AI proficient researcher. I don't understand how LLM works.
-#   - These tools are not for people without prior basic knowledge in programming and research experience. 
+#   - These tools are not for people without prior basic knowledge in programming and research experience.
 #   - Jevons paradox: productivity gains from these tools doesn't lead to reduced workload but instead keeping work-life balance unchanged or worse.
 #
 
@@ -42,9 +42,20 @@
 #
 
 # %% [markdown]
-# IDE
+# IDEs and CLI
+#
+# 1. Cursor
+# 2. VSCode + GitHub Copilot
+# 3. Antigravity
+# 4. Cline
+# 5. Claude Code
+# 6. OpenCode
+# 7. Windsurf
+#
+# Which one to choose? - Data analysis: Cursor, Antigravity, VS code, Claude Code
 #
 # - Inline edit and Predictive Text
+#
 
 # %% [markdown]
 # Prompting basics
@@ -56,7 +67,6 @@
 # PROMPT STRUCTURE
 #
 #         **Prompt:**“Can you look at Figure 5 from this paper and tell me what it shows?. I need to extacact the bond lifetime and force data from it. Giv me the data points in an Excel file with two columns—one for bond lifetime and one for force? Yeah? Just get the data points in the figure. Then make a plot from the extracted data so that I can confirm the data looks correct.”
-#
 #
 # **Role:** Scientific data analyst specializing in quantitative image analysis and biophysics literature
 #
@@ -70,30 +80,36 @@
 # %% [markdown]
 # # Context management
 #
-# [How to avoid Context Rot](https://research.trychroma.com/context-rot)
+# [Context Rot Problem](https://research.trychroma.com/context-rot)
 #
 # <img src="images/8.png" width="100%">
 #
-#
-# Model maintain performance even when context is compressed or filtered, as long as the relevant information is preserved. 
+# Model maintain performance even when context is compressed or filtered, as long as the relevant information is preserved.
 #
 # Models can often "reason through" irrelevant context better than they can filter it for pure information retrieval
 #
-# #### For retrieval tasks:
+# ### Context management strategies
 #
-# 1. keep only information semantically related to the query.
+# 1. For retrieval tasks:
+#    - keep only information semantically related to the query.
 #
-# 2. Place critical facts at start or end (avoid middle)
+#    - Place critical facts at start or end (avoid middle)
 #
-# 3. Remove semantically unrelated content
+#    - Remove semantically unrelated content
 #
-# #### For reasoning tasks.
+# 2. For reasoning tasks:
+#    - Group related information together
 #
-# 1. Group related information together
+#    - Keep reasoning chain elements proximate
 #
-# 2. Keep reasoning chain elements proximate
+#    - More forgiving of middle placement than retrieval
 #
-# 3. More forgiving of middle placement than retrieval
+# 3. Claude's approach:
+#    - \compact
+#
+#    - \context
+#
+# 4. [Understanding Claude Code's Context Window](https://www.damiangalarza.com/posts/2025-12-08-understanding-claude-code-context-window/)
 #
 
 # %% [markdown]
@@ -137,22 +153,26 @@
 # %% [markdown]
 # PLANS
 #
-# 1. plan mode allows you to create
-#     - Goals
-#     - Key references
-#     - High-level steps and pseudocode
-#     - Step by step instructions with reasoning and algorithmic steps
-#     - Optional features to implement
-#     - Mermaid flowchart
-#     - Example code
-#     - Documentation/walkthrough after execution
-#     - <span style="color: red;">**To-do list**</span>
-#     - Agents, Skills and tools to be used in the bulding process
-#     - <span style="color: red;">**Verification and validation steps**</span>
+# 1. Plan mode allows you to create
+#    - Goals
+#    - Key references
+#    - High-level steps and pseudocode
+#    - Step by step instructions with reasoning and algorithmic steps
+#    - Optional features to implement
+#    - Mermaid flowchart
+#    - Example code
+#    - Documentation/walkthrough after execution
+#    - <span style="color: red;">**To-do list**</span>
+#    - Agents, Skills and tools to be used in the bulding process
+#    - <span style="color: red;">**Verification and validation steps**</span>
 #
 
 # %% [markdown]
 # SKILLS
+#
+# 1. [Scientific writer](/Users/suraj/Documents/AI-Aided-Research-Workflow/.cursor/skills/scientific-writing/SKILL.md)
+#
+# 2. [Claude-scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills/tree/main)
 #
 
 # %% [markdown]
@@ -161,6 +181,10 @@
 
 # %% [markdown]
 # DOCS
+#
+# 1. You can add any repo as docs to cursor.
+# 2. You can change any repo to a MCP server. by changing github.com to gitmcp.io
+#     Example: https://github.com/anthropics/prompt-eng-interactive-tutorial -> https://gitmcp.io/anthropics/prompt-eng-interactive-tutorial
 #
 
 # %% [markdown]
