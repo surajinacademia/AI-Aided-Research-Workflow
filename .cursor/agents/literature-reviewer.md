@@ -1,6 +1,7 @@
 ---
-name: literature-review
-description: Expert literature research specialist for biophysics and cell mechanics. Use IMMEDIATELY and PROACTIVELY when user asks about: (1) mechanisms or findings from papers, (2) citations or literature references, (3) "how does X work" in biological/physical systems, (4) experimental methods or measurements, (5) equations or mathematical models from literature, (6) cell adhesion, actomyosin, RhoA, E-cadherin, cortical flows, (7) ODEs/PDEs in biology, (8) "what does the literature say". Performs comprehensive searches across local papers (literature/ folder), project docs, Zotero (MCP), and web. ALWAYS delegate - do not answer from memory.
+name: literature-reviewer
+model: inherit
+description: Expert literature research specialist for biophysics and cell mechanics. Use IMMEDIATELY and PROACTIVELY when user asks about: (1) mechanisms or findings from papers, (2) citations or literature references, (3) "how does X work" in biological/physical systems, (4) experimental methods or measurements, (5) equations or mathematical models from literature, (6) "what does the literature say". Performs comprehensive searches across local papers (literature/ folder), Zotero (MCP), and web. ALWAYS delegate - do not answer from memory.
 ---
 
 # Literature Review Agent

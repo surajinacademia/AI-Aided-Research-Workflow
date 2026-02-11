@@ -4,8 +4,6 @@ alwaysApply: false
 globs: ["*.py", "*.ipynb"]
 ---
 
-# python-coding-standards
-
 **Priority:** high
 
 # Python Coding Standards
@@ -22,6 +20,7 @@ globs: ["*.py", "*.ipynb"]
 ## Jupyter Notebooks
 
 **⚠️ CRITICAL: Edit `.py` files only, NOT `.ipynb`**
+Notebooks sync automatically via jupytext.
 
 ```python
 # %% [markdown]
@@ -35,8 +34,6 @@ data = pd.read_csv('data.csv')
 # Maintain 5-line spacing between cells
 result = analyze(data)
 ```
-
-Notebooks sync automatically via jupytext.
 
 ## Analysis vs Plotting
 
@@ -88,21 +85,6 @@ plt.show()
 ```
 
 ## Plotting Configuration
-
-**Standard setup:**
-
-```python
-import matplotlib.pyplot as plt
-import minimalist
-
-minimalist.use_style("science")
-plt.rcParams.update({'figure.facecolor': 'none', 'axes.facecolor': 'none'})
-
-# Publication figure widths
-text_width = 510/72.27  # LaTeX text width in inches
-```
-
-**Standards:**
 
 - Use matplotlib only (no seaborn)
 - Save as SVG for vector graphics

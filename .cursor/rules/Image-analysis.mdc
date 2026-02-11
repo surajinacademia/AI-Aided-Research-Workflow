@@ -68,16 +68,6 @@ from scipy.ndimage import gaussian_filter, label
 
 smoothed = gaussian_filter(image, sigma=2)
 labeled, n = label(binary_mask)
-```
-
-### aicsimageio
-
-```python
-from aicsimageio import AICSImage
-
-# Load proprietary formats (ND2, CZI, LIF, LSM)
-img = AICSImage("data.nd2")
-data = img.get_image_data("CZYX")
 ``` 
 
 ## Quick Reference

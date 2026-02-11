@@ -18,4 +18,4 @@
 
 9. To live, is to suffer. This is the meaning of life. - Friedrich Nietzsche
 
-10. Attachment is the root of all sadness and anxiety.
+10. Attachment is the root cause of sadness and anxiety.

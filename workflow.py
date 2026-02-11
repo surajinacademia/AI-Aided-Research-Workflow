@@ -170,6 +170,11 @@
 # %% [markdown]
 # SKILLS
 #
+# - Open standard tool from Anthropic that allows agents to get domain specific knowledge. 
+# - Recipes that has domain specific knowledge that helps orchestrate the agent. 
+# - Skills use progressive disclosure to save context size.
+#
+#
 # 1. [Scientific writer](/Users/suraj/Documents/AI-Aided-Research-Workflow/.cursor/skills/scientific-writing/SKILL.md)
 #
 # 2. [Claude-scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills/tree/main)
