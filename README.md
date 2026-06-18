@@ -32,11 +32,7 @@ This is a framework for AI-aided research using **context engineering** to guide
 
 > b. [University students can 1 year free Gemini pro and Antigravity](https://one.google.com/ai-student?g1_landing_page=75)
 
-> c. [Get 2-3 years of free Copilot + Github if you are a faculty or a student](https://docs.github.com/en/copilot/how-tos/manage-your-account/get-free-access-to-copilot-pro) (probably the best option)
-
-> d. [Perplexity for students at $5/month](https://www.perplexity.ai/backtoschool)
-
-> e. [Windsurf: just like Cursor but discounted for students](https://windsurf.com/pricing)
+> c. [Perplexity for students at $5/month](https://www.perplexity.ai/backtoschool)
 
 
 ## ❌ Bad Example Workflows
@@ -68,12 +64,11 @@ But this is not what you want as a researcher. You want to use the ai agent to a
 
 ### 📋 Rules
 
-| Rule | Description | When Applied |
+Canonical project rules live in [``AGENTS.md``](AGENTS.md). Project skills live under [``.agents/skills/``](.agents/skills/). Do not add provider-specific rule wrappers for this repository.
+
+| Rule | Description | When applied |
 |------|-------------|--------------|
-| [``rules.mdc``](.cursor/rules/rules.mdc) | Main rule file with project-wide standards and expert domains | Always |
-| [``python-coding-standards.mdc``](.cursor/rules/python-coding-standards.mdc) | Python coding patterns, best practices, and visualization standards | Always |
-| [``Image-analysis.mdc``](.cursor/rules/Image-analysis.mdc) | Image analysis workflow patterns and MCP tool prioritization | For `.png` files |
-| [``project-repo.mdc``](.cursor/rules/project-repo.mdc) | Repository structure documentation and navigation guide for AI agents | Always |
+| [``AGENTS.md``](AGENTS.md) | Project-wide standards, Python/Julia style, image analysis workflow, and skills layout | Always |
 
 ### 🔌 MCP Servers
 
@@ -83,29 +78,34 @@ But this is not what you want as a researcher. You want to use the ai agent to a
 | `cellpose-mcp` | Cell segmentation and quantification | Cell counting, morphology analysis |
 | `fmcp` | Mathematical plotting (matplotlib, numpy, sympy) | Scientific plots, numerical computation |
 | `sympy-mcp` | Symbolic mathematics and calculus | Calculus, algebra, differential equations |
-| `claude-scientific-skills` | Scientific computing capabilities | Research computations |
 | `data-forge` | Data manipulation and analysis | Complex data transformations |
 | `notion-mcp` | Notion workspace integration | Note-taking, documentation |
 | `zotero-mcp` | Zotero library access for literature management | Literature management |
-| `cursor-ide-browser` | Browser automation for testing | Web testing, scraping |
 
 ### 🧠 Skills
 
+Project skills live under [``.agents/skills/``](.agents/skills/).
+
 | Skill | Purpose |
 |-------|---------|
-| [``scientific-writing/SKILL.md``](.cursor/skills/scientific-writing/SKILL.md) | Creates concise, structured scientific documents with LaTeX equations, integrated figures, and clear technical writing |
+| [``scientific-writing/SKILL.md``](.agents/skills/scientific-writing/SKILL.md) | Creates concise, structured scientific documents with LaTeX equations, integrated figures, and clear technical writing |
+| [``scientific-artist/SKILL.md``](.agents/skills/scientific-artist/SKILL.md) | Scientific schematics and figure generation |
+| [``data-analysis/SKILL.md``](.agents/skills/data-analysis/SKILL.md) | Data analysis workflows and pandas patterns |
+| [``figure-generation/SKILL.md``](.agents/skills/figure-generation/SKILL.md) | Figure style and script conventions |
+| [``deslop/SKILL.md``](.agents/skills/deslop/SKILL.md) | Tighten prose; remove filler |
+| [``skill-creator/SKILL.md``](.agents/skills/skill-creator/SKILL.md) | Authoring new skills |
 
 ### 🤖 Subagents
 
 | Subagent | Purpose |
 |----------|---------|
-| [``literature-review.md``](.cursor/agents/literature-review.md) | Expert literature research for biophysics and cell mechanics, semantic searches across local papers, Zotero library, and web sources |
+| None | Keep durable workflow guidance in `AGENTS.md` and skills under `.agents/skills/` |
 
 ### 💻 Commands
 
 | Command | Purpose |
 |---------|---------|
-| [``git.md``](.cursor/commands/git.md) | Complete GitHub workflow: quick commit & push for small updates, detailed workflow for significant changes with proposed commit messages |
+| None | Use normal shell and Git commands; do not maintain provider-specific command files |
 
 ---
 

@@ -1,3 +1,6 @@
 # Local-only notes (do not sync to GitHub)
 Notes.md
- 
+
+.DS_Store
+__pycache__/
+*.pyc
